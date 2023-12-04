@@ -49,4 +49,17 @@ main:
     syscall
     move $a0, $v0       
     li $v0, 1           
-    syscall                
+    syscall   
+
+   # Exit
+    li $v0, 10         
+    syscall             
+
+gcd:
+   #  greatest common factor algorithm
+    beq $a1, $zero, end_gcd  
+    move $t4, $a1           
+    rem $t5, $a0, $a1        
+    move $a0, $t4            
+    move $a1, $t5            
+    j gcd                    
