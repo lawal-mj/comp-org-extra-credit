@@ -17,9 +17,16 @@ main:
     move $t0, $v0       
 
     # Get M
-    li $v0, 4           # syscall for print string
-    la $a0, promptM     # load address of promptM
+    li $v0, 4           
+    la $a0, promptM     
     syscall
-    li $v0, 5           # syscall for read int
+    li $v0, 5           
     syscall
-    move $t1, $v0       # store read number in $t1
+    move $t1, $v0       
+
+   # Get N
+    li $v0, 4           
+    la $a0, promptM     
+    syscall
+    syscall
+    move $t1, $v0       
