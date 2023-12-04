@@ -1,0 +1,1 @@
+the extra credit ptoject for comp org that calculates the greatest common factor of 3 numbers
