@@ -29,4 +29,10 @@ main:
     la $a0, promptM     
     syscall
     syscall
-    move $t1, $v0       
+    move $t1, $v0   
+
+    # get thegreatest Common factor of the first two
+    move $a0, $t0       
+    move $a1, $t1       
+    jal gcd             
+    move $t3, $v0          
