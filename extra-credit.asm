@@ -6,3 +6,12 @@ resultMsg: .asciiz "The Greatest Common Divisor is: "
 
 .text
 .globl main
+
+main:
+    # Get L
+    li $v0, 4          
+    la $a0, promptL     
+    syscall
+    li $v0, 5           
+    syscall
+    move $t0, $v0       
