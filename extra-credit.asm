@@ -15,3 +15,11 @@ main:
     li $v0, 5           
     syscall
     move $t0, $v0       
+
+    # Get M
+    li $v0, 4           # syscall for print string
+    la $a0, promptM     # load address of promptM
+    syscall
+    li $v0, 5           # syscall for read int
+    syscall
+    move $t1, $v0       # store read number in $t1
