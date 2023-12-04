@@ -62,4 +62,10 @@ gcd:
     rem $t5, $a0, $a1        
     move $a0, $t4            
     move $a1, $t5            
-    j gcd                    
+    j gcd   
+
+
+end_gcd:
+    move $v0, $a0            
+    jr $ra                   
+                 
