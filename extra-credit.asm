@@ -40,4 +40,13 @@ main:
     # comapre the gcd of the first two with N 
     move $a0, $t3       
     move $a1, $t2       
-    jal gcd                   
+    jal gcd   
+
+
+   # Print out result
+    li $v0, 4           
+    la $a0, resultMsg   
+    syscall
+    move $a0, $v0       
+    li $v0, 1           
+    syscall                
