@@ -35,4 +35,9 @@ main:
     move $a0, $t0       
     move $a1, $t1       
     jal gcd             
-    move $t3, $v0          
+    move $t3, $v0  
+
+    # comapre the gcd of the first two with N 
+    move $a0, $t3       
+    move $a1, $t2       
+    jal gcd                   
